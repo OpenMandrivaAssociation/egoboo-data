@@ -14,6 +14,7 @@ URL:		http://egoboo.sourceforge.net/
 Summary:	Data files for egoboo
 Requires:	%{oname} >= 2.22
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Egoboo is an open source project, using OpenGL and SDL(Simple
