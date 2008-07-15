@@ -1,18 +1,21 @@
+%define _enable_debug_packages %{nil}
+%define debug_package          %{nil}
+
 %define oname	egoboo
 %define	name	%{oname}-data
-%define version	2.220
-%define	rel	2
+%define version	2.6.3b
+%define	rel	1
 %define release %mkrel %{rel}
 
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Source0:	%{name}_%{version}.orig.tar.gz
+Source0:	http://switch.dl.sourceforge.net/sourceforge/egoboo/%name-%version.tar.gz
 License:	GPL
 Group:		Games/Adventure
 URL:		http://egoboo.sourceforge.net/
 Summary:	Data files for egoboo
-Requires:	%{oname} >= 2.22
+Requires:	%{oname} = %version
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -24,7 +27,7 @@ detailed models(using Quake2 modeling tools) make this game
 stand out in the gaming open-source community.
 
 %prep
-%setup -q -n %{oname}
+%setup -q -n Egoboo\ %{version}
 
 %build
 
