@@ -10,6 +10,7 @@
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
+Epoch:		1
 Source0:	http://switch.dl.sourceforge.net/sourceforge/egoboo/%name-%version.tar.gz
 License:	GPL
 Group:		Games/Adventure
