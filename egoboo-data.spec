@@ -4,7 +4,7 @@
 %define oname	egoboo
 %define	name	%{oname}-data
 %define version	2.6.3b
-%define	rel	1
+%define	rel	2
 %define release %mkrel %{rel}
 
 Name:		%{name}
@@ -16,7 +16,7 @@ License:	GPL
 Group:		Games/Adventure
 URL:		http://egoboo.sourceforge.net/
 Summary:	Data files for egoboo
-Requires:	%{oname} = %version
+Requires:	%{oname} = %epoch:%version
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
