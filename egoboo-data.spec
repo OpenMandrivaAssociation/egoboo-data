@@ -3,8 +3,8 @@
 
 %define oname	egoboo
 %define	name	%{oname}-data
-%define version	2.6.3b
-%define	rel	2
+%define version	2.6.4
+%define	rel	1
 %define release %mkrel %{rel}
 
 Name:		%{name}
