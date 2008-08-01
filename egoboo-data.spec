@@ -28,7 +28,7 @@ detailed models(using Quake2 modeling tools) make this game
 stand out in the gaming open-source community.
 
 %prep
-%setup -q -n Egoboo\ %{version}
+%setup -q -n %name-%{version}
 
 %build
 
