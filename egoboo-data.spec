@@ -6,7 +6,7 @@
 Summary:	Data files for egoboo
 Name:		%{oname}-data
 Version:	2.7.7
-Release:	%mkrel 1
+Release:	%mkrel 2
 Epoch:		1
 License:	GPL
 Group:		Games/Adventure
