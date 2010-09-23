@@ -5,13 +5,13 @@
 
 Summary:	Data files for egoboo
 Name:		%{oname}-data
-Version:	2.7.7
-Release:	%mkrel 2
+Version:	2.8.0
+Release:	%mkrel 1
 Epoch:		1
 License:	GPL
 Group:		Games/Adventure
 URL:		http://egoboo.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/egoboo/%{name}-%{version}.tar.lzma
+Source0:	http://downloads.sourceforge.net/egoboo/%{name}-%{version}.tar.xz
 Requires:	%{oname} = %{epoch}:%{version}
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -31,11 +31,13 @@ stand out in the gaming open-source community.
 %install
 rm -rf %{buildroot}
 install -d %{buildroot}%{_gamesdatadir}/%{oname}
-cp -r * %{buildroot}%{_gamesdatadir}/%{oname}
+cp -r basicdat modules %{buildroot}%{_gamesdatadir}/%{oname}
 
 %clean
 rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%{_gamesdatadir}/%{oname}
+%dir %{_gamesdatadir}/%{oname}
+%{_gamesdatadir}/%{oname}/basicdat
+%{_gamesdatadir}/%{oname}/modules
