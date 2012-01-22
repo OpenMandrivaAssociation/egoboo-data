@@ -5,7 +5,7 @@ Name:		%{oname}-data
 Version:	2.8.1
 Release:	1
 Epoch:		1
-License:	GPL
+License:	GPLv3+
 Group:		Games/Adventure
 URL:		http://egoboo.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/egoboo/%{name}-%{version}.tar.xz
