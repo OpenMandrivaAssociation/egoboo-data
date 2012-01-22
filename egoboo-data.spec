@@ -1,6 +1,3 @@
-%define _enable_debug_packages %{nil}
-%define debug_package          %{nil}
-
 %define oname	egoboo
 
 Summary:	Data files for egoboo
