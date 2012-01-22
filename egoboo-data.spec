@@ -32,6 +32,7 @@ install -d %{buildroot}%{_gamesdatadir}/%{oname}
 cp -r basicdat modules %{buildroot}%{_gamesdatadir}/%{oname}
 
 %files
+%defattr(644,root,root,755)
 %dir %{_gamesdatadir}/%{oname}
 %{_gamesdatadir}/%{oname}/basicdat
 %{_gamesdatadir}/%{oname}/modules
