@@ -6,7 +6,7 @@
 Summary:	Data files for egoboo
 Name:		%{oname}-data
 Version:	2.8.1
-Release:	%mkrel 1
+Release:	1
 Epoch:		1
 License:	GPL
 Group:		Games/Adventure
@@ -14,7 +14,6 @@ URL:		http://egoboo.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/egoboo/%{name}-%{version}.tar.xz
 Requires:	%{oname} = %{epoch}:%{version}
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Egoboo is an open source project, using OpenGL and SDL(Simple
@@ -29,15 +28,10 @@ stand out in the gaming open-source community.
 %build
 
 %install
-rm -rf %{buildroot}
 install -d %{buildroot}%{_gamesdatadir}/%{oname}
 cp -r basicdat modules %{buildroot}%{_gamesdatadir}/%{oname}
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %dir %{_gamesdatadir}/%{oname}
 %{_gamesdatadir}/%{oname}/basicdat
 %{_gamesdatadir}/%{oname}/modules
