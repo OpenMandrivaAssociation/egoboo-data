@@ -7,7 +7,7 @@ Release:	2
 Epoch:		1
 License:	GPLv3+
 Group:		Games/Adventure
-URL:		http://egoboo.sourceforge.net/
+URL:		https://egoboo.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/egoboo/%{name}-%{version}.tar.xz
 Requires:	%{oname} = %{epoch}:%{version}
 BuildArch:	noarch
